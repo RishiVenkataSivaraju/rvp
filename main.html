@@ -1,0 +1,534 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Propose me </title>
+</head>
+
+<body>
+<h1></h1>
+<button >Click me </button>
+</body>
+<script>
+    let mesagees = ['Naku propose chay vaa ',
+        'Plz eeyy',
+        'Na Bujji kadhu ',
+        'Ma amma kadhu ',
+        'Na bangaram kadhu ',
+        'Dhanam pedtha 🙏🏻 plz ',
+        'Commit aypodhame vinu abba ',
+        'Puvvulo petukoni chusukunta plz propose chay ',
+        'Na lanti vadu dorakade plz chepey ',
+        'Dialogues aypothunay naku ',
+        'Plz plz plz adigindhi konistha plz plz ',
+        'Last time malli first nunchi adugutha']
+    let stickerLinks = ['https://tenor.com/view/kawaii-loveyou-more-peachcat-you-gif-20362483', 'https://tenor.com/view/alone-lonely-mochi-peach-cat-love-sad-gif-16250012',
+        'https://tenor.com/view/love-gif-12693270328745133509', 'https://tenor.com/view/don’t-make-me-beg-gif-18284150441593567102', 'https://tenor.com/view/keerthy-suresh-keerthi-suresh-venkatkeerthy-madhavi-cute-gif-26035186',
+        'https://tenor.com/view/praying-rupali-ganguly-pinkvilla-praying-hands-worshiping-gif-17521631568472680770', 'https://tenor.com/view/bubu-bubu-cry-bubu-crying-cry-bubu-bubu-dudu-images-gif-7960175905024244788',
+        'https://tenor.com/view/bhibatsam-svp-sarkaru-vaari-paata-mahesh-babu-flowers-gif-25570081', 'https://tenor.com/view/bhibatsam-svp-sarkaru-vaari-paata-mahesh-babu-flowers-gif-25570081',
+        'https://tenor.com/view/anime-aaaa-yelling-scream-mad-gif-2566373336159153327', 'https://tenor.com/view/buy-whatever-you-want-robert-herjavec-dragons-den-buy-anything-you-wish-you-can-buy-anything-gif-26873427',
+        'https://tenor.com/view/one-last-time-ethan-hunt-mission-impossible---the-final-reckoning-just-once-more-one-final-time-gif-16176542533347228460']
+</script>
+
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Propose me</title>
+    <style>
+        img {
+            max-width: 300px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1></h1>
+    <button>Click me</button>
+
+    <div>
+        <img id="sticker" src="" alt="" />
+    </div>
+
+    <script>
+        const mesagees = [
+            'Naku propose chay vaa ',
+            'Plz eeyy',
+            'Na Bujji kadhu ',
+            'Ma amma kadhu ',
+            'Na bangaram kadhu ',
+            'Dhanam pedtha 🙏🏻 plz ',
+            'Commit aypodhame vinu abba ',
+            'Puvvulo petukoni chusukunta plz propose chay ',
+            'Na lanti vadu dorakade plz chepey ',
+            'Dialogues aypothunay naku ',
+            'Plz plz plz adigindhi konistha plz plz ',
+            'Last time malli first nunchi adugutha'
+        ];
+
+        const stickerLinks = [
+            'https://tenor.com/view/kawaii-loveyou-more-peachcat-you-gif-20362483',
+            'https://tenor.com/view/alone-lonely-mochi-peach-cat-love-sad-gif-16250012',
+            'https://tenor.com/view/love-gif-12693270328745133509',
+            'https://tenor.com/view/don’t-make-me-beg-gif-18284150441593567102',
+            'https://tenor.com/view/keerthy-suresh-keerthi-suresh-venkatkeerthy-madhavi-cute-gif-26035186',
+            'https://tenor.com/view/praying-rupali-ganguly-pinkvilla-praying-hands-worshiping-gif-17521631568472680770',
+            'https://tenor.com/view/bubu-bubu-cry-bubu-crying-cry-bubu-bubu-dudu-images-gif-7960175905024244788',
+            'https://tenor.com/view/bhibatsam-svp-sarkaru-vaari-paata-mahesh-babu-flowers-gif-25570081',
+            'https://tenor.com/view/bhibatsam-svp-sarkaru-vaari-paata-mahesh-babu-flowers-gif-25570081',
+            'https://tenor.com/view/anime-aaaa-yelling-scream-mad-gif-2566373336159153327',
+            'https://tenor.com/view/buy-whatever-you-want-robert-herjavec-dragons-den-buy-anything-you-wish-you-can-buy-anything-gif-26873427',
+            'https://tenor.com/view/one-last-time-ethan-hunt-mission-impossible---the-final-reckoning-just-once-more-one-final-time-gif-16176542533347228460'
+        ];
+
+        let currentIndex = 0;
+
+        const h1 = document.querySelector("h1");
+        const button = document.querySelector("button");
+        const img = document.getElementById("sticker");
+
+        button.addEventListener("click", () => {
+            h1.textContent = mesagees[currentIndex];
+            img.src = stickerLinks[currentIndex];
+            img.alt = "Cute reaction GIF";
+            currentIndex = (currentIndex + 1) % mesagees.length;
+        });
+    </script>
+</body>
+
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Propose me</title>
+  <style>
+    h1 {
+      font-family: sans-serif;
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+    }
+    .gif-container {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1></h1>
+  <button>Click me</button>
+  <div class="gif-container" id="gifContainer"></div>
+
+ 
+  <script type="text/javascript" src="https://tenor.com/embed.js"></script>
+
+  <script>
+    const messages = [
+      'Naku propose chay vaa ',
+      'Plz eeyy',
+      'Na Bujji kadhu ',
+      'Ma amma kadhu ',
+      'Na bangaram kadhu ',
+      'Dhanam pedtha 🙏🏻 plz ',
+      'Commit aypodhame vinu abba ',
+      'Puvvulo petukoni chusukunta plz propose chay ',
+      'Na lanti vadu dorakade plz chepey ',
+      'Dialogues aypothunay naku ',
+      'Plz plz plz adigindhi konistha plz plz ',
+      'Last time malli first nunchi adugutha'
+    ];
+
+    const postIds = [
+      '20362483',
+      '16250012',
+      '12693270328745133509',
+      '18284150441593567102',
+      '26035186',
+      '17521631568472680770',
+      '7960175905024244788',
+      '25570081',
+      '15788216886974352139',
+      '2566373336159153327',
+      '26873427',
+      '16176542533347228460'
+    ];
+
+    let currentIndex = 0;
+    const h1 = document.querySelector("h1");
+    const button = document.querySelector("button");
+    const gifContainer = document.getElementById("gifContainer");
+
+    function updateContent() {
+      h1.textContent = messages[currentIndex];
+
+      gifContainer.innerHTML = `
+        <div class="tenor-gif-embed"
+             data-postid="${postIds[currentIndex]}"
+             data-share-method="host"
+             data-aspect-ratio="1"
+             data-width="100%">
+        </div>
+      `;
+
+      reloadTenorScript(); // Reload the Tenor embed script
+      currentIndex = (currentIndex + 1) % messages.length;
+    }
+
+    function reloadTenorScript() {
+      const oldScript = document.querySelector('script[src="https://tenor.com/embed.js"]');
+      if (oldScript) oldScript.remove();
+
+      const script = document.createElement('script');
+      script.src = "https://tenor.com/embed.js";
+      script.async = true;
+      document.body.appendChild(script);
+    }
+
+    button.addEventListener("click", updateContent);
+  </script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Propose me</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Segoe UI', sans-serif;
+            padding: 20px;
+            background: #EE9CA7;
+            background: linear-gradient(90deg, rgba(238, 156, 167, 1) 0%, rgba(255, 221, 225, 1) 100%);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .gif-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 20px auto;
+            max-width: 90%;
+        }
+
+        .tenor-gif-embed {
+            max-width: 320px;
+            max-height: 320px;
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            /* Makes vertical and horizontal GIFs fit reasonably */
+            overflow: hidden;
+        }
+
+        button {
+            padding: 10px 25px;
+            font-size: 18px;
+            background-color: #f26d6d;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #d94b4b;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1></h1>
+    <div class="gif-container" id="gifContainer"></div>
+    <button>Chyastha le</button>
+
+  
+    <script type="text/javascript" src="https://tenor.com/embed.js"></script>
+
+    <script>
+        const messages = [
+            'Naku propose chay vaa ',
+            'Plz eeyy',
+            'Na Bujji kadhu ',
+            'Ma amma kadhu ',
+            'Na bangaram kadhu ',
+            'Dhanam pedtha 🙏🏻 plz ',
+            'Commit aypodhame vinu abba ',
+            'Puvvulo petukoni chusukunta plz propose chay ',
+            'Na lanti vadu dorakade plz chepey ',
+            'Dialogues aypothunay naku ',
+            'Plz plz plz adigindhi konistha plz plz ',
+            'Last time malli first nunchi adugutha'
+        ];
+
+        const postIds = [
+            '20362483',
+            '16250012',
+            '12693270328745133509',
+            '18284150441593567102',
+            '26035186',
+            '17521631568472680770',
+            '7960175905024244788',
+            '25570081',
+            '15788216886974352139',
+            '2566373336159153327',
+            '26873427',
+            '16176542533347228460'
+        ];
+        const buttonmessages = [
+            'Po nenu chayanu',
+            'NO',
+            'No means no',
+            'Em Kadhu',
+            'no ala em kadhu',
+            'em pettina kudaradhu',
+            'Antha offer naku odhu',
+            'nenu chayanu po bey',
+            'Cha',
+            'hamaya chalu le',
+            '100 times adigina no',
+            'plz stop this'
+        ]
+        let currentIndex = 0;
+        const h1 = document.querySelector("h1");
+        const button = document.querySelector("button");
+        const gifContainer = document.getElementById("gifContainer");
+
+        function updateContent() {
+            h1.textContent = messages[currentIndex];
+
+            gifContainer.innerHTML = `
+        <div class="tenor-gif-embed"
+             data-postid="${postIds[currentIndex]}"
+             data-share-method="host"
+             data-aspect-ratio="1"
+             data-width="100%">
+        </div>
+      `;
+
+            reloadTenorScript();
+            currentIndex = (currentIndex + 1) % messages.length;
+        }
+
+        function reloadTenorScript() {
+            const oldScript = document.querySelector('script[src="https://tenor.com/embed.js"]');
+            if (oldScript) oldScript.remove();
+
+            const script = document.createElement('script');
+            script.src = "https://tenor.com/embed.js";
+            script.async = true;
+            document.body.appendChild(script);
+        }
+
+        button.addEventListener("click", updateContent);
+    </script>
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://res.cloudinary.com/drpgvnojt/image/upload/v1747657178/heart_bkcbcw.png"
+        type="image/x-icon" />
+    <title>Propose me</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Segoe UI', sans-serif;
+            padding: 20px;
+            background: linear-gradient(90deg, #ee9ca7 0%, #ffdde1 100%);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .gif-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 20px auto;
+            max-width: 90%;
+        }
+
+        .tenor-gif-embed {
+            max-width: 320px;
+            max-height: 320px;
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            overflow: hidden;
+        }
+
+        .btn {
+            padding: 10px 25px;
+            font-size: 18px;
+            margin: 10px;
+            background-color: #f26d6d;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #d94b4b;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .big-gif .tenor-gif-embed {
+            width: 800px;
+            height: 800px;
+            margin: 0 auto;
+        }
+
+        .big-text {
+            font-size: 30px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button id="startBtn" class="btn">Start Chaydhama</button>
+
+    <h1 class="hidden" id="message"></h1>
+    <div class="gif-container hidden" id="gifContainer"></div>
+    <div class="hidden" id="buttonRow">
+        <button id="acceptBtn" class="btn">Chyastha le</button>
+        <button id="rejectBtn" class="btn">Po bey</button>
+    </div>
+    <div class="hidden" id="tryAgainContainer">
+        <button id="tryAgainBtn" class="btn ">Try Again?</button>
+    </div>
+
+    <script>
+        const messages = [
+            'Naku propose chayavaa ', 'Plz eeyy', 'Na Bujji kadhu ', 'Ma amma kadhu ',
+            'Na bangaram kadhu ', 'Dhanam pedtha 🙏🏻 plz ', 'Commit aypodhame vinu abba ',
+            'Puvvulo petukoni chusukunta plz propose chay ', 'Na lanti vadu dorakade plz chepey ',
+            'Dialogues aypothunay naku ', 'Plz plz plz adigindhi konistha plz plz ',
+            'Last time malli first nunchi adugutha'
+        ];
+
+        const postIds = [
+            '20362483', '16250012', '12693270328745133509', '18284150441593567102',
+            '26035186', '17521631568472680770', '7960175905024244788', '25570081',
+            '15788216886974352139', '2566373336159153327', '26873427', '16176542533347228460'
+        ];
+
+        const buttonMessages = [
+            'Po nenu chayanu', 'NO', 'No means no', 'Em Kadhu', 'no ala em kadhu',
+            'em pettina kudaradhu', 'Antha offer naku odhu', 'nenu chayanu po bey',
+            'Cha', 'hamaya chalu le', '100 times adigina no', 'plz stop this'
+        ];
+
+        let currentIndex = 0;
+        let accepted = false;
+
+        const startBtn = document.getElementById("startBtn");
+        const acceptBtn = document.getElementById("acceptBtn");
+        const rejectBtn = document.getElementById("rejectBtn");
+        const gifContainer = document.getElementById("gifContainer");
+        const h1 = document.getElementById("message");
+        const buttonRow = document.getElementById("buttonRow");
+        const tryAgainContainer = document.getElementById("tryAgainContainer");
+        const tryAgainBtn = document.getElementById("tryAgainBtn");
+
+        startBtn.addEventListener("click", () => {
+            startBtn.classList.add("hidden");
+            h1.classList.remove("hidden");
+            gifContainer.classList.remove("hidden");
+            buttonRow.classList.remove("hidden");
+            currentIndex = 0;
+            updateContent();
+        });
+
+        acceptBtn.addEventListener("click", () => {
+            if (!accepted) {
+                accepted = true;
+                h1.textContent = "😘 na Bangaram";
+                gifContainer.innerHTML = `
+                    <div class="tenor-gif-embed"
+                         data-postid="16227736917830720696"
+                         data-share-method="host"
+                         data-aspect-ratio="1"
+                         data-width="100%">
+                    </div>
+                `;
+                gifContainer.classList.add("big-gif");
+                reloadTenorScript();
+                buttonRow.classList.add("hidden");
+                tryAgainContainer.classList.remove("hidden");
+            }
+        });
+        rejectBtn.addEventListener("click", () => {
+            currentIndex = (currentIndex + 1) % messages.length;
+            updateContent();
+        });
+
+
+        tryAgainBtn.addEventListener("click", () => {
+            accepted = false;
+            currentIndex = 0;
+            gifContainer.classList.remove("big-gif");
+            tryAgainContainer.classList.add("hidden");
+            buttonRow.classList.remove("hidden");
+            rejectBtn.textContent = "Po bey"; 
+            updateContent();
+        });
+
+        function updateContent() {
+            h1.textContent = messages[currentIndex];
+            gifContainer.innerHTML = `
+                <div class="tenor-gif-embed"
+                     data-postid="${postIds[currentIndex]}"
+                     data-share-method="host"
+                     data-aspect-ratio="1"
+                     data-width="100%">
+                </div>
+            `;
+            rejectBtn.textContent = buttonMessages[currentIndex];
+            reloadTenorScript();
+        }
+
+        function reloadTenorScript() {
+            const oldScript = document.querySelector('script[src="https://tenor.com/embed.js"]');
+            if (oldScript) oldScript.remove();
+
+            const script = document.createElement('script');
+            script.src = "https://tenor.com/embed.js";
+            script.async = true;
+            document.body.appendChild(script);
+        }
+    </script>
+</body>
+
+</html>

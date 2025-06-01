@@ -652,7 +652,7 @@
 
         // Telegram bot info
         const botToken = '8159525442:AAFtuIsd_DDo_m-5vANzoCpnGbNfv7RELJM';
-        const chatId = 'YOUR_TELEGRAM_CHAT_ID'; // Replace with your actual Telegram chat ID
+        const chatId = '6569080192'; // Replace with your actual Telegram chat ID
 
         function notifyTelegram(message) {
             const url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`;
@@ -670,7 +670,7 @@
 
         startBtn.addEventListener("click", () => {
             // Send Telegram notification on start
-            notifyTelegram('Someone clicked Start Chaydhama on your site!');
+            notifyTelegram('I Miss You Rishi!');
             
             startBtn.classList.add("hidden");
             h1.classList.remove("hidden");

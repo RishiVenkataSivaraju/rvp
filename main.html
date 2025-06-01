@@ -344,7 +344,7 @@
 </body>
 
 </html> -->
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -529,6 +529,207 @@
             document.body.appendChild(script);
         }
     </script>
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="https://res.cloudinary.com/drpgvnojt/image/upload/v1747657178/heart_bkcbcw.png"
+    type="image/x-icon" />
+  <title>Propose me</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 20px;
+      background: linear-gradient(90deg, #ee9ca7 0%, #ffdde1 100%);
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    .gif-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto 20px auto;
+      max-width: 90%;
+    }
+
+    .tenor-gif-embed {
+      max-width: 320px;
+      max-height: 320px;
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      overflow: hidden;
+    }
+
+    .btn {
+      padding: 10px 25px;
+      font-size: 18px;
+      margin: 10px;
+      background-color: #f26d6d;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #d94b4b;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .big-gif .tenor-gif-embed {
+      width: 800px;
+      height: 800px;
+      margin: 0 auto;
+    }
+
+    .big-text {
+      font-size: 30px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Hidden Form for Passive Email Notification -->
+  <form id="visitForm" action="https://formsubmit.co/2021cse.rm4@svec.edu.in" method="POST" class="hidden">
+    <input type="hidden" name="_subject" value="Website Visited 💌">
+    <input type="hidden" name="message" value="She opened the proposal website again! 💖">
+    <input type="hidden" name="_captcha" value="false">
+  </form>
+
+  <button id="startBtn" class="btn">Start Chaydhama</button>
+
+  <h1 class="hidden" id="message"></h1>
+  <div class="gif-container hidden" id="gifContainer"></div>
+  <div class="hidden" id="buttonRow">
+    <button id="acceptBtn" class="btn">Chyastha le</button>
+    <button id="rejectBtn" class="btn">Po bey</button>
+  </div>
+  <div class="hidden" id="tryAgainContainer">
+    <button id="tryAgainBtn" class="btn">Try Again?</button>
+  </div>
+
+  <script>
+    const messages = [
+      'Naku propose chayavaa ', 'Plz eeyy', 'Na Bujji kadhu ', 'Ma amma kadhu ',
+      'Na bangaram kadhu ', 'Dhanam pedtha 🙏🏻 plz ', 'Commit aypodhame vinu abba ',
+      'Puvvulo petukoni chusukunta plz propose chay ', 'Na lanti vadu dorakade plz chepey ',
+      'Dialogues aypothunay naku ', 'Plz plz plz adigindhi konistha plz plz ',
+      'Last time malli first nunchi adugutha'
+    ];
+
+    const postIds = [
+      '20362483', '16250012', '12693270328745133509', '18284150441593567102',
+      '26035186', '17521631568472680770', '7960175905024244788', '25570081',
+      '15788216886974352139', '2566373336159153327', '26873427', '16176542533347228460'
+    ];
+
+    const buttonMessages = [
+      'Po nenu chayanu', 'NO', 'No means no', 'Em Kadhu', 'no ala em kadhu',
+      'em pettina kudaradhu', 'Antha offer naku odhu', 'nenu chayanu po bey',
+      'Cha', 'hamaya chalu le', '100 times adigina no', 'plz stop this'
+    ];
+
+    let currentIndex = 0;
+    let accepted = false;
+
+    const startBtn = document.getElementById("startBtn");
+    const acceptBtn = document.getElementById("acceptBtn");
+    const rejectBtn = document.getElementById("rejectBtn");
+    const gifContainer = document.getElementById("gifContainer");
+    const h1 = document.getElementById("message");
+    const buttonRow = document.getElementById("buttonRow");
+    const tryAgainContainer = document.getElementById("tryAgainContainer");
+    const tryAgainBtn = document.getElementById("tryAgainBtn");
+
+    startBtn.addEventListener("click", () => {
+      startBtn.classList.add("hidden");
+      h1.classList.remove("hidden");
+      gifContainer.classList.remove("hidden");
+      buttonRow.classList.remove("hidden");
+      currentIndex = 0;
+      updateContent();
+    });
+
+    acceptBtn.addEventListener("click", () => {
+      if (!accepted) {
+        accepted = true;
+        h1.textContent = "😘 na Bangaram";
+        gifContainer.innerHTML = `
+            <div class="tenor-gif-embed"
+                 data-postid="16227736917830720696"
+                 data-share-method="host"
+                 data-aspect-ratio="1"
+                 data-width="100%">
+            </div>
+        `;
+        gifContainer.classList.add("big-gif");
+        reloadTenorScript();
+        buttonRow.classList.add("hidden");
+        tryAgainContainer.classList.remove("hidden");
+      }
+    });
+
+    rejectBtn.addEventListener("click", () => {
+      currentIndex = (currentIndex + 1) % messages.length;
+      updateContent();
+    });
+
+    tryAgainBtn.addEventListener("click", () => {
+      accepted = false;
+      currentIndex = 0;
+      gifContainer.classList.remove("big-gif");
+      tryAgainContainer.classList.add("hidden");
+      buttonRow.classList.remove("hidden");
+      rejectBtn.textContent = "Po bey";
+      updateContent();
+    });
+
+    function updateContent() {
+      h1.textContent = messages[currentIndex];
+      gifContainer.innerHTML = `
+        <div class="tenor-gif-embed"
+             data-postid="${postIds[currentIndex]}"
+             data-share-method="host"
+             data-aspect-ratio="1"
+             data-width="100%">
+        </div>
+      `;
+      rejectBtn.textContent = buttonMessages[currentIndex];
+      reloadTenorScript();
+    }
+
+    function reloadTenorScript() {
+      const oldScript = document.querySelector('script[src="https://tenor.com/embed.js"]');
+      if (oldScript) oldScript.remove();
+      const script = document.createElement('script');
+      script.src = "https://tenor.com/embed.js";
+      script.async = true;
+      document.body.appendChild(script);
+    }
+
+    // Auto Email Notification When Page is Visited
+    window.addEventListener("DOMContentLoaded", () => {
+      setTimeout(() => {
+        document.getElementById("visitForm").submit();
+      }, 3000); // adjust delay if needed
+    });
+  </script>
 </body>
 
 </html>
